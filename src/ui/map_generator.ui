@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1290</width>
+                <height>1175</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                    <widget class="QStackedWidget" name="generator_stack">
+                        <property name="currentIndex">
+                            <number>0</number>
+                        </property>
+                        <widget class="QWidget" name="page">
+                            <layout class="QVBoxLayout" name="verticalLayout">
+                                <item>
+                                    <widget class="QLabel" name="generate_image_label_def">
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>700</width>
+                                                <height>700</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string>Click button to generate image</string>
+                                        </property>
+                                        <property name="scaledContents">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>Qt::AlignCenter</set>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <layout class="QHBoxLayout" name="horizontalLayout_2">
+                                        <item>
+                                            <spacer name="horizontalSpacer_3">
+                                                <property name="orientation">
+                                                    <enum>Qt::Horizontal</enum>
+                                                </property>
+                                                <property name="sizeHint" stdset="0">
+                                                    <size>
+                                                        <width>40</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                            </spacer>
+                                        </item>
+                                        <item>
+                                            <layout class="QVBoxLayout" name="verticalLayout_2">
+                                                <item>
+                                                    <spacer name="verticalSpacer_4">
+                                                        <property name="orientation">
+                                                            <enum>Qt::Vertical</enum>
+                                                        </property>
+                                                        <property name="sizeHint" stdset="0">
+                                                            <size>
+                                                                <width>20</width>
+                                                                <height>40</height>
+                                                            </size>
+                                                        </property>
+                                                    </spacer>
+                                                </item>
+                                                <item>
+                                                    <widget class="QLabel" name="label">
+                                                        <property name="font">
+                                                            <font>
+                                                                <pointsize>12</pointsize>
+                                                            </font>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Shape</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="horizontalLayout">
+                                                        <item>
+                                                            <widget class="QSpinBox" name="shape_spin_def">
+                                                                <property name="maximum">
+                                                                    <number>2561</number>
+                                                                </property>
+                                                                <property name="displayIntegerBase">
+                                                                    <number>10</number>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+                                                <item>
+                                                    <widget class="QLabel" name="label_3">
+                                                        <property name="text">
+                                                            <string>Seed</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <widget class="QSpinBox" name="seed_spin_def">
+                                                        <property name="maximum">
+                                                            <number>99990</number>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <spacer name="verticalSpacer_3">
+                                                        <property name="orientation">
+                                                            <enum>Qt::Vertical</enum>
+                                                        </property>
+                                                        <property name="sizeHint" stdset="0">
+                                                            <size>
+                                                                <width>20</width>
+                                                                <height>40</height>
+                                                            </size>
+                                                        </property>
+                                                    </spacer>
+                                                </item>
+                                            </layout>
+                                        </item>
+                                        <item>
+                                            <layout class="QVBoxLayout" name="verticalLayout_4">
+                                                <item>
+                                                    <spacer name="verticalSpacer">
+                                                        <property name="orientation">
+                                                            <enum>Qt::Vertical</enum>
+                                                        </property>
+                                                        <property name="sizeHint" stdset="0">
+                                                            <size>
+                                                                <width>20</width>
+                                                                <height>40</height>
+                                                            </size>
+                                                        </property>
+                                                    </spacer>
+                                                </item>
+                                                <item>
+                                                    <widget class="QPushButton" name="generate_button_def">
+                                                        <property name="enabled">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Generate</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <widget class="QLabel" name="label_2">
+                                                        <property name="text">
+                                                            <string>Image will be saved to outputs folder</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <spacer name="verticalSpacer_2">
+                                                        <property name="orientation">
+                                                            <enum>Qt::Vertical</enum>
+                                                        </property>
+                                                        <property name="sizeHint" stdset="0">
+                                                            <size>
+                                                                <width>20</width>
+                                                                <height>40</height>
+                                                            </size>
+                                                        </property>
+                                                    </spacer>
+                                                </item>
+                                            </layout>
+                                        </item>
+                                        <item>
+                                            <spacer name="horizontalSpacer_4">
+                                                <property name="orientation">
+                                                    <enum>Qt::Horizontal</enum>
+                                                </property>
+                                                <property name="sizeHint" stdset="0">
+                                                    <size>
+                                                        <width>40</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                            </spacer>
+                                        </item>
+                                    </layout>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="page_2">
+                            <layout class="QHBoxLayout" name="horizontalLayout_13">
+                                <item>
+                                    <widget class="QLabel" name="generate_image_label_exp">
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>700</width>
+                                                <height>700</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string>Click button to generate image</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>Qt::AlignCenter</set>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <layout class="QHBoxLayout" name="horizontalLayout_9">
+                                        <item>
+                                            <spacer name="horizontalSpacer_5">
+                                                <property name="orientation">
+                                                    <enum>Qt::Horizontal</enum>
+                                                </property>
+                                                <property name="sizeHint" stdset="0">
+                                                    <size>
+                                                        <width>40</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                            </spacer>
+                                        </item>
+                                        <item>
+                                            <layout class="QVBoxLayout" name="verticalLayout_3">
+                                                <item>
+                                                    <spacer name="verticalSpacer_5">
+                                                        <property name="orientation">
+                                                            <enum>Qt::Vertical</enum>
+                                                        </property>
+                                                        <property name="sizeHint" stdset="0">
+                                                            <size>
+                                                                <width>20</width>
+                                                                <height>40</height>
+                                                            </size>
+                                                        </property>
+                                                    </spacer>
+                                                </item>
+                                                <item>
+                                                    <widget class="QLabel" name="label_4">
+                                                        <property name="text">
+                                                            <string>Scale</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="horizontalLayout_4">
+                                                        <item>
+                                                            <widget class="QSlider" name="scale_slider">
+                                                                <property name="minimum">
+                                                                    <number>10</number>
+                                                                </property>
+                                                                <property name="maximum">
+                                                                    <number>200</number>
+                                                                </property>
+                                                                <property name="singleStep">
+                                                                    <number>1</number>
+                                                                </property>
+                                                                <property name="tracking">
+                                                                    <bool>true</bool>
+                                                                </property>
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                                <property name="tickInterval">
+                                                                    <number>0</number>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                        <item>
+                                                            <widget class="QDoubleSpinBox" name="scale_spin_box">
+                                                                <property name="minimum">
+                                                                    <double>0.100000000000000</double>
+                                                                </property>
+                                                                <property name="maximum">
+                                                                    <double>2.000000000000000</double>
+                                                                </property>
+                                                                <property name="singleStep">
+                                                                    <double>0.100000000000000</double>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+                                                <item>
+                                                    <widget class="QLabel" name="label_5">
+                                                        <property name="text">
+                                                            <string>Octaves</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="horizontalLayout_5">
+                                                        <item>
+                                                            <widget class="QSlider" name="octaves_slider">
+                                                                <property name="minimum">
+                                                                    <number>1</number>
+                                                                </property>
+                                                                <property name="maximum">
+                                                                    <number>12</number>
+                                                                </property>
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                                <property name="tickPosition">
+                                                                    <enum>QSlider::NoTicks</enum>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                        <item>
+                                                            <widget class="QSpinBox" name="octaves_spin_box">
+                                                                <property name="minimum">
+                                                                    <number>1</number>
+                                                                </property>
+                                                                <property name="maximum">
+                                                                    <number>12</number>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+                                                <item>
+                                                    <widget class="QLabel" name="label_6">
+                                                        <property name="text">
+                                                            <string>Persistence</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="horizontalLayout_6">
+                                                        <item>
+                                                            <widget class="QSlider" name="persistence_slider">
+                                                                <property name="minimum">
+                                                                    <number>10</number>
+                                                                </property>
+                                                                <property name="maximum">
+                                                                    <number>200</number>
+                                                                </property>
+                                                                <property name="singleStep">
+                                                                    <number>1</number>
+                                                                </property>
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                        <item>
+                                                            <widget class="QDoubleSpinBox" name="persistence_spin_box">
+                                                                <property name="minimum">
+                                                                    <double>0.100000000000000</double>
+                                                                </property>
+                                                                <property name="maximum">
+                                                                    <double>2.000000000000000</double>
+                                                                </property>
+                                                                <property name="singleStep">
+                                                                    <double>0.100000000000000</double>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+                                                <item>
+                                                    <widget class="QLabel" name="label_7">
+                                                        <property name="text">
+                                                            <string>Lacunarity</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="horizontalLayout_7">
+                                                        <item>
+                                                            <widget class="QSlider" name="lacunarity_slider">
+                                                                <property name="minimum">
+                                                                    <number>10</number>
+                                                                </property>
+                                                                <property name="maximum">
+                                                                    <number>400</number>
+                                                                </property>
+                                                                <property name="singleStep">
+                                                                    <number>1</number>
+                                                                </property>
+                                                                <property name="orientation">
+                                                                    <enum>Qt::Horizontal</enum>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                        <item>
+                                                            <widget class="QDoubleSpinBox" name="lacunarity_spin_box">
+                                                                <property name="minimum">
+                                                                    <double>0.100000000000000</double>
+                                                                </property>
+                                                                <property name="maximum">
+                                                                    <double>4.000000000000000</double>
+                                                                </property>
+                                                                <property name="singleStep">
+                                                                    <double>0.100000000000000</double>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+                                                <item>
+                                                    <widget class="QPushButton" name="get_default_vals_button_exp">
+                                                        <property name="text">
+                                                            <string>Default values</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <widget class="QLabel" name="label_8">
+                                                        <property name="text">
+                                                            <string>Shape</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="horizontalLayout_8">
+                                                        <item>
+                                                            <widget class="QSpinBox" name="shape_spin_exp">
+                                                                <property name="maximum">
+                                                                    <number>2561</number>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+                                                <item>
+                                                    <widget class="QLabel" name="label_9">
+                                                        <property name="text">
+                                                            <string>Seed</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <widget class="QSpinBox" name="seed_spin_exp">
+                                                        <property name="maximum">
+                                                            <number>99989</number>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="horizontalLayout_12">
+                                                        <item>
+                                                            <widget class="QLabel" name="label_10">
+                                                                <property name="text">
+                                                                    <string>Terrain config file</string>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                        <item>
+                                                            <widget class="QToolButton" name="terrain_info">
+                                                                <property name="text">
+                                                                    <string>Info</string>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+                                                <item>
+                                                    <layout class="QHBoxLayout" name="horizontalLayout_11">
+                                                        <item>
+                                                            <widget class="QLineEdit" name="terrain_json_line_edit">
+                                                                <property name="enabled">
+                                                                    <bool>true</bool>
+                                                                </property>
+                                                                <property name="dragEnabled">
+                                                                    <bool>false</bool>
+                                                                </property>
+                                                                <property name="placeholderText">
+                                                                    <string>Path to json file</string>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                        <item>
+                                                            <widget class="QPushButton" name="terrain_json_button">
+                                                                <property name="text">
+                                                                    <string>Browse</string>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                    </layout>
+                                                </item>
+                                                <item>
+                                                    <spacer name="verticalSpacer_6">
+                                                        <property name="orientation">
+                                                            <enum>Qt::Vertical</enum>
+                                                        </property>
+                                                        <property name="sizeHint" stdset="0">
+                                                            <size>
+                                                                <width>20</width>
+                                                                <height>40</height>
+                                                            </size>
+                                                        </property>
+                                                    </spacer>
+                                                </item>
+                                            </layout>
+                                        </item>
+                                        <item>
+                                            <widget class="QPushButton" name="generate_button_exp">
+                                                <property name="text">
+                                                    <string>Generate</string>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <spacer name="horizontalSpacer">
+                                                <property name="orientation">
+                                                    <enum>Qt::Horizontal</enum>
+                                                </property>
+                                                <property name="sizeHint" stdset="0">
+                                                    <size>
+                                                        <width>40</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                            </spacer>
+                                        </item>
+                                    </layout>
+                                </item>
+                            </layout>
+                        </widget>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+        <widget class="QMenuBar" name="menuBar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>1290</width>
+                    <height>23</height>
+                </rect>
+            </property>
+            <widget class="QMenu" name="menu_File">
+                <property name="title">
+                    <string>&amp;Help</string>
+                </property>
+                <addaction name="actionHelp"/>
+            </widget>
+            <widget class="QMenu" name="menu_Expert_Mode">
+                <property name="title">
+                    <string>&amp;Mode</string>
+                </property>
+                <addaction name="actionDefault_Mode"/>
+                <addaction name="actionExpert_Mode"/>
+            </widget>
+            <addaction name="menu_File"/>
+            <addaction name="menu_Expert_Mode"/>
+        </widget>
+        <action name="actionDefault_Mode">
+            <property name="text">
+                <string>Default mode</string>
+            </property>
+        </action>
+        <action name="actionExpert_Mode">
+            <property name="text">
+                <string>Expert mode</string>
+            </property>
+        </action>
+        <action name="actionHelp">
+            <property name="text">
+                <string>How to use</string>
+            </property>
+        </action>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
